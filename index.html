@@ -633,15 +633,17 @@ EDIT STUDENTS AND AWARD TOTALS HERE
 
 const specialAwards = [
   {
-    name: "benson1952",
-    awards: 20,
-    profile: "https://www.chess.com/member/benson1952"
-  },
+  name: "benson1952",
+  displayName: "benson1952 - Hagrid🌂🎃",
+  awards: 20,
+  profile: "https://www.chess.com/member/benson1952"
+},
   {
-    name: "liarbird",
-    awards: 16,
-    profile: "https://www.chess.com/member/liarbird"
-  },
+  name: "liarbird",
+  displayName: "liarbird - Ginny🦄",
+  awards: 16,
+  profile: "https://www.chess.com/member/liarbird"
+},
   {
     name: "Minerva_Umbridge",
     awards: 15,
@@ -710,7 +712,7 @@ const avatar = await getChessAvatar(entry.student.name);
 (avatar || 'https://www.chess.com/bundles/web/images/user-image.007dad08.svg') +
 '" alt="' + entry.student.name + '">' +
     '<span class="award-name">@' +
-    entry.student.name +
+    entry.student.displayName || entry.student.name
     '</span>' +
 
     '<span class="award-count">' +
