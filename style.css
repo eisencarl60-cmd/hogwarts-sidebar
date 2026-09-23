@@ -801,7 +801,9 @@ body {
 #award-first {
   transform: translateY(-14px);
 }
-
+#award-second {
+  transform: translateY(-7px);
+}
 /* Individual student cards */
 
 .award-card {
