@@ -174,18 +174,18 @@ body {
   position: absolute;
   top: 5px;
   z-index: 6;
-  font-size: 22px;
+  font-size: 18px;
   pointer-events: none;
   opacity: 0;
 }
 
 .impact-left {
-  left: 5px;
+  left: 7px;
   animation: impactLeft 18s infinite;
 }
 
 .impact-right {
-  right: 5px;
+  right: 7px;
   animation: impactRight 18s infinite;
 }
 
