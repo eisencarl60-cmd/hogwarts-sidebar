@@ -51,19 +51,19 @@ body {
 }
 
 .header::before {
-  content: "🧭";
+  content: "🛜";
   position: absolute;
   top: 6px;
-  left: 12px;
+  left: 10px;
   color: #e7c46b;
   text-shadow: 0 0 8px #ffd86b;
 }
 
 .header::after {
-  content: "🧭";
+  content: "🛜";
   position: absolute;
   top: 6px;
-  right: 12px;
+  right: 10px;
   color: #e7c46b;
   text-shadow: 0 0 8px #ffd86b;
 }
