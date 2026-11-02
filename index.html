@@ -714,13 +714,11 @@ const avatar = await getChessAvatar(entry.student.name);
 '<img class="award-avatar" src="' +
 (avatar || 'https://www.chess.com/bundles/web/images/user-image.007dad08.svg') +
 '" alt="' + entry.student.name + '">' +
-    '<span class="award-name">@' +
-    entry.student.displayName || entry.student.name
-    '</span>' +
-
-    '<span class="award-count">' +
+   '<span class="award-name">@' +
+    entry.student.name +
+    '<span class="award-count"> 🏅 ' +
     entry.student.awards +
-    ' 🏅</span>' +
+    '</span></span>' +
 
     '</a>';
 
