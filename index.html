@@ -637,7 +637,7 @@ const specialAwards = [
   {
   name: "benson1952",
   displayName: "benson1952 - Hagrid🌂🎃",
-  awards: 23,
+  awards: 20,
   profile: "https://www.chess.com/member/benson1952"
 },
   {
@@ -714,11 +714,13 @@ const avatar = await getChessAvatar(entry.student.name);
 '<img class="award-avatar" src="' +
 (avatar || 'https://www.chess.com/bundles/web/images/user-image.007dad08.svg') +
 '" alt="' + entry.student.name + '">' +
-   '<span class="award-name">@' +
-    entry.student.name +
-    '<span class="award-count"> 🏅 ' +
+    '<span class="award-name">@' +
+    entry.student.displayName || entry.student.name
+    '</span>' +
+
+    '<span class="award-count">' +
     entry.student.awards +
-    '</span></span>' +
+    ' 🏅</span>' +
 
     '</a>';
 
@@ -728,7 +730,7 @@ const avatar = await getChessAvatar(entry.student.name);
 
   <!-- WIZARD GRAMOPHONE -->
 
-  <div class="gramophone">
+  <div class="panel gramophone">
 
     <div class="gramophone-title">
       🎧 The Castle Gramophone
