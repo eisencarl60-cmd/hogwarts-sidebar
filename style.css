@@ -882,10 +882,14 @@ body {
 }
 
 .award-count {
-  display: block;
-  margin-top: 4px;
-  font-size: 11px;
+  display: inline;
+  margin-top: 0;
+  margin-left: 3px;
+  font-size: 9px;
   font-weight: bold;
+  white-space: nowrap;
+  opacity: 0.9;
+}
 
 }
 /* GRAMOPHONE */
