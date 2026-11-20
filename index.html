@@ -593,6 +593,7 @@ setInterval(() => {
 
 }, 20000);
 </script>
+
     <!-- SPECIAL AWARDS TRINITY -->
 
 <div class="panel" id="awards-panel">
@@ -615,13 +616,13 @@ setInterval(() => {
 
   <div id="awards-trinity">
 
-  <div id="award-third"></div>
+    <div id="award-second"></div>
 
-  <div id="award-first"></div>
+    <div id="award-first"></div>
 
-  <div id="award-second"></div>
+    <div id="award-third"></div>
 
-</div>
+  </div>
 
 </div>
   <script>
@@ -635,23 +636,23 @@ EDIT STUDENTS AND AWARD TOTALS HERE
 
 const specialAwards = [
   {
-  name: "benson1952",
-  displayName: "benson1952 - Hagrid🌂",
-  awards: 20,
-  profile: "https://www.chess.com/member/benson1952"
-},
+    name: "benson1952",
+    displayName: "Hagrid 🌂",
+    awards: 19,
+    profile: "https://www.chess.com/member/benson1952"
+  },
   {
-  name: "liarbird",
-  displayName: "liarbird - Ginny🦄",
-  awards: 16,
-  profile: "https://www.chess.com/member/liarbird"
-},
-  {
-  name: "Minerva_Umbridge",
-  displayName: "Minerva Umbridge",
-  awards: 15,
-  profile: "https://www.chess.com/member/minerva_umbridge"
-},
+    name: "Minerva_Umbridge",
+    displayName: "Minerva",
+    awards: 15,
+    profile: "https://www.chess.com/member/minerva_umbridge"
+  },
+    {
+    name: "liarbird",
+    displayName: "Ginny Weasley 🦄",
+    awards: 16,
+    profile: "https://www.chess.com/member/liarbird"
+  }
 ];
 
 /*
@@ -714,13 +715,24 @@ const avatar = await getChessAvatar(entry.student.name);
 '<img class="award-avatar" src="' +
 (avatar || 'https://www.chess.com/bundles/web/images/user-image.007dad08.svg') +
 '" alt="' + entry.student.name + '">' +
+        /*
+    ========================================
+    🏅 THREE-LINE AWARD DISPLAY
+    USERNAME • HOGWARTS IDENTITY • TOTAL
+    ========================================
+    */
+
     '<span class="award-name">@' +
-    entry.student.displayName || entry.student.name
+    entry.student.name +
     '</span>' +
 
-    '<span class="award-count">' +
+    '<span class="award-title">' +
+    entry.student.displayName +
+    '</span>' +
+
+    '<span class="award-count">🏅 ' +
     entry.student.awards +
-    ' 🏅</span>' +
+    ' 𝓢𝓐</span>' +
 
     '</a>';
 
